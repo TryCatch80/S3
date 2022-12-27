@@ -95,8 +95,6 @@ def test_check_aws_creds():
     test_setup()
     # Check more thoroughly for creds being set.
     vars = os.environ
-    AWS_ACCESS_KEY_ID = 'ASIAVQT2Q7OAH543JG6U'
-    AWS_SECRET_ACCESS_KEY = 'ASIAVQT2Q7OAH543JG6U'
     keyid = vars.get("AWS_ACCESS_KEY_ID")
     key = vars.get("AWS_SECRET_ACCESS_KEY")
     credsFile = os.path.expanduser("~") + "/.aws/credentials"
